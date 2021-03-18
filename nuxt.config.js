@@ -37,11 +37,39 @@ export default {
       const dicoConfigPath = path.join(__dirname, "dico.config.jsonc");
 
       if (fs.existsSync(dicoConfigPath)) {
+        if (this.options.dev) {
+          this.options.watch.push(dicoConfigPath);
+        }
+
         const dicoConfig = JSONC.parse(
           fs.readFileSync(dicoConfigPath, { encoding: "utf8" })
         );
 
-        console.log(dicoConfig);
+        const parseDicoConfig = config => {
+          const result = {};
+          for (const key in config) {
+            if (Object.hasOwnProperty.call(config, key)) {
+              const element = config[key];
+
+              if (typeof element === "string") {
+                if (element === "string") {
+                  result[key] = `dico.${key}`;
+                }
+              } else {
+                result[key] = parseDicoConfig(element);
+              }
+            }
+          }
+          return result;
+        };
+
+        const dicoParsed = parseDicoConfig(dicoConfig);
+
+        this.addPlugin({
+          src: path.resolve(__dirname, "plugin.js"),
+          fileName: "dico.js",
+          options: { dicoParsed }
+        });
       }
     }
   ]

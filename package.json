@@ -9,12 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "false4.0.1",
-    "@tailwindcss/forms": "false0.2.1",
     "nuxt": "2.15.3"
   },
   "devDependencies": {
-    "comment-json": "false4.1.0",
-    "faker": "false5.4.0"
+    "@nuxtjs/tailwindcss": "4.0.1",
+    "@tailwindcss/forms": "0.2.1",
+    "comment-json": "4.1.0"
   }
 }

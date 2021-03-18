@@ -27,7 +27,6 @@ export default {
       "@nuxtjs/tailwindcss",
       {
         viewer: false,
-        jit: true,
         config: {
           plugins: [tailwindForm]
         }

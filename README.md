@@ -2,25 +2,19 @@
 
 ## Prerequisites
 
-1. Make sure you're running Node 14 or higher
-
-```
-$ nvm install 14.16.0 && nvm use 14.16.0
-```
-
-2. Clone this repository
+1. Clone this repository
 
 ```bash
 $ git clone https://github.com/dico-app/sd-2-demo
 ```
 
-3. Install dependencies
+2. Install dependencies
 
 ```bash
 $ yarn install # or npm install
 ```
 
-4. Start dev server
+3. Start dev server
 
 ```bash
 $ yarn dev # or npm run dev

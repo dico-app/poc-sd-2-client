@@ -1,6 +1,6 @@
 <template>
   <main class="min-h-screen bg-indigo-100 p-6 sm:py-12">
-    <section class="max-w-[800px] mx-auto">
+    <section class="mx-auto" :style="{ maxWidth: '800px' }">
       <h1 class="text-4xl font-bold mb-16">
         <svg width="20" height="20" viewBox="0 0 50 50" fill="none" class="inline">
           <circle  cx="25" cy="25" r="25" fill="#000000"></circle>

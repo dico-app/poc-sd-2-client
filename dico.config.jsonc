@@ -1,0 +1,13 @@
+{
+  "loginForm": {
+    "title": "string",
+    "emailLabel": "string",
+    "emailPlaceholder": "string",
+    "passwordLabel": "string",
+    "passwordPlaceholder": "string",
+    "submitLabel": "string"
+  },
+  "signupForm": {
+    "title": "string"
+  }
+}

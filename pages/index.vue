@@ -21,7 +21,7 @@
           <span class="text-gray-700">Password</span>
           <input id="password" type="password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="********" required>
         </label>
-        <input type="submit" class="px-3 py-2 mt-1 block w-full rounded-md border-gray-300 hover:bg-indigo-100 shadow-sm appearance-none focus:outline-none focus:ring focus:ring-indigo-400 focus:ring-opacity-50 font-medium cursor-pointer" value="Log In">
+        <input type="submit" class="px-3 py-2 mt-1 block w-full rounded-md border-gray-300 hover:bg-indigo-100 shadow-sm appearance-none focus:outline-none focus:ring focus:ring-indigo-400 focus:ring-opacity-50 font-medium cursor-pointer" value="Log In" />
       </form>
     </section>
   </main>
